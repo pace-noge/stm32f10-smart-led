@@ -44,9 +44,10 @@ fn main() -> ! {
             gpiob.pb14.into_floating_input(&mut gpiob.crh),
             gpiob.pb15.into_alternate_push_pull(&mut gpiob.crh),
         );
+
         let mut delay = Delay::new(cp.SYST, clocks);
 
-        let spi = Spi::spi2(dp.SPI2, pins, ws2812::MODE, 3.mhz(), clocks, &mut rcc.apb1);
+        let spi = Spi::spi2(dp.SPI2, pins,ws2812::MODE, 3.mhz(), clocks, &mut rcc.apb1);
 
         const NUM_LEDS: usize = 6;
 

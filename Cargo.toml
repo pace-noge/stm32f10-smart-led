@@ -12,4 +12,4 @@ panic-rtt-target = {version = "0.1.1", features = ["cortex-m"]}
 rtt-target = {version = "0.3", features = ["cortex-m"]}
 stm32f1xx-hal = {version = "0.7", features = ["rt", "stm32f103", "medium"]}
 smart-leds = "0.3.0"
-ws2812-spi = "0.4.0"
+ws2812-spi = "0.2.0"
